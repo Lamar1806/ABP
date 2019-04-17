@@ -1,0 +1,28 @@
+:local(.container){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+:local(.hero){
+    width: 100%;
+}
+
+:local(.h2){
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+:local(.p){
+    width: 80%;
+    min-width: 300px;
+    max-width: 400px;
+    /* margin: 0 auto; */
+    margin-bottom: 20px;
+}
+:local(.subPic){
+    display: inline-block;
+    margin: 20px 0; 
+    min-width: 300px;
+    max-width: 400px;
+    width: 80%;
+}

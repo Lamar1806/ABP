@@ -1,0 +1,25 @@
+:local(.container){
+    height: 50px;
+    display: flex;
+    padding: 0px 15px;
+    background: black;
+    align-items: center;
+}
+:local(.txt){
+    color: white;
+}
+
+:local(.linkContainer){
+    position: absolute;
+    right: 20px;
+}
+:local(.li){
+    display: inline-block;
+    color: white;
+    align-self: flex-end;
+    margin-left: 15px; 
+}
+:local(.icon){
+    color: white;
+    font-size: 20px;
+}

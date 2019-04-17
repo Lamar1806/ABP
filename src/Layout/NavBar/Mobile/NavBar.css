@@ -1,0 +1,25 @@
+:local(.container){
+    position: relative;
+    background-color: #000;
+    height: 50px;
+    color: white;
+    /* padding: 15px; */
+    display: flex;    
+    align-items: center;
+    width: 100%;
+}
+
+:local(.navTxt){
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 15px;   
+}
+
+:local(.menuIcon){    
+    position: absolute;
+    display: inline-block;
+    color: white;
+    right: 15px;
+    /* top: 10px; */    
+    font-size: 25px;
+}

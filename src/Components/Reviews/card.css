@@ -1,0 +1,58 @@
+:local(.container){
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    justify-content: center;
+    /* align-self: center; */
+    /* background: white;  */
+}
+/* :local(.innerContainer){
+    display: flex;
+} */
+:local(.profileImg){
+    /* flex: 1; */
+    /* display: block; */
+    margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+:local(.back){
+    position: absolute;
+    align-self: flex-start;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+:local(.forward){
+    position: absolute;
+    align-self: flex-end;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+:local(.reviewText){
+    color: white; 
+    font-size: 16px;
+    width: 80%;
+    
+    display: inline-block;
+}
+
+:local(.quoteStart){
+    margin-right: 15px; 
+    font-size: 25px;
+    
+}
+
+:local(.quoteEnd){
+    margin-left: 15px; 
+    font-size: 25px;    
+    vertical-align: text-top;
+}
+

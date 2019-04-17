@@ -1,0 +1,67 @@
+:local(.container){
+    height: calc(100% + 100px);
+    width: 100vw;
+    background: rgba(0,0,0,.8);
+    position: fixed;
+    z-index: 20;
+    top: -50px;
+    /* overflow: hidden;  */
+    display: none;
+} 
+
+:local(.innerContainer){
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 90%;
+    max-width: 350px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    font-size: 18px;
+    
+}
+:local(.closeIcon){
+    position: absolute; 
+    align-self: flex-end;
+    right:10px;
+    margin-top: 10px;
+    color: red;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+:local(.logo){
+    /* position: relative; */
+    margin-top: -30px;
+    width: 80%;
+    height: 180px;
+}
+
+:local(.p1){
+    margin-top: -25px;
+    margin-bottom: 5px;
+}
+
+:local(.number){
+    margin-bottom: 20px;
+}
+
+:local(.outerUl > li){
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+:local(.innerUl){
+    position: relative;
+    left: 20px;
+    display: none;
+}
+:local(.innerUl > li){
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+}
