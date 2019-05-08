@@ -33,22 +33,32 @@ export default class Contact extends Component {
         ]
     }
     renderCards(){
-        return this.state.cards.map((e, index)=>{
+        let tyler = 'segrestbrook@goldmail.etsu.edu'
+        let store = 'brooks@digitalversatility.com'
+        let recipients = `${store}`
+        return this.state.cards.map((e, index)=>{ 
+            if(e.mainText === 'Service Call'){
+                recipients += `,${tyler}`
+            }else{
+                recipients = `${store}`
+            }            
             return (
-                <Card  
+                <Card
                     key={index}       
                     ionIconName = {e.ionIconName}
                     subText = {e.subText}
                     mainText = {e.mainText}
+                    recipients = {recipients}
                 />
             )
         })
     }
-  render() {      
-    return (
-      <div className={styles.container}>
-        {this.renderCards()}
-      </div>
-    )
-  }
+    render() {
+        return (
+        <div className={styles.container}>
+         <h2 className={styles.h2}>Get In Touch</h2>     
+            {this.renderCards()}
+        </div>
+        )
+    }
 }

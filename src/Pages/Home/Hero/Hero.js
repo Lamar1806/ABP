@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import styles from './Hero.css'
@@ -14,12 +15,18 @@ export default class Hero extends Component {
             Advanced Pools and Backyards
           </h1> 
 
-          <p className={styles.ctaTxt}>
-            We handle all backyard needs at a <b/>
-            backyard near you!
-          </p>
+          <div className={styles.ctaContainer}>
 
-          <Link to='contact' className={styles.pillBtn}>Get A Quote </Link>
+            <p className={styles.ctaTxt}>
+              We handle all backyard needs  
+              at a backyard near you!
+            </p>
+
+            <Link to='contact' className={styles.pillBtn}>
+              Get A Quote 
+            </Link>
+          </div>
+
 
         </div>    
             

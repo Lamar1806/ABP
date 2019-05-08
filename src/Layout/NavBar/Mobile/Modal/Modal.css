@@ -1,13 +1,25 @@
 :local(.container){
     height: calc(100% + 100px);
     width: 100vw;
-    background: rgba(0,0,0,.8);
+    /* background: rgba(0,0,0,.8); */
     position: fixed;
     z-index: 20;
     top: -50px;
     /* overflow: hidden;  */
     display: none;
 } 
+
+:local(.backDrop){
+    height: calc(100% + 100px);
+    width: 100vw;
+    
+    background: rgba(0,0,0,.8);
+    position: fixed;
+    z-index: 20;
+    top: -50px;
+    /* overflow: hidden;  */
+    /* display: none; */
+}
 
 :local(.innerContainer){
     position: fixed;
@@ -36,15 +48,16 @@
 }
 
 :local(.logo){
-    /* position: relative; */
-    margin-top: -30px;
+    margin-bottom: 20px;
     width: 80%;
-    height: 180px;
+    max-width: 120px;
+    height: 120px;
 }
 
-:local(.p1){
+:local(.number){
     margin-top: -25px;
     margin-bottom: 5px;
+    color: #FF3324;
 }
 
 :local(.number){

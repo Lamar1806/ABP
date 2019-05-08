@@ -8,7 +8,7 @@ import Reviews from '../../Components/Reviews/Reviews'
 export default class Home extends Component {
   render() {
     return (
-      <div>
+      <div className={styles.container}>
         <Hero />    
         <Contact />
         <Services />

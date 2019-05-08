@@ -9,16 +9,19 @@
 :local(.mainImg){
     width: 90%;
     height: 300px;
+    max-width: 500px;
     margin-bottom: 20px;
+    /* align-self: flex-start; */
+    /* margin-left: 20px; */
 }
 
 :local(.thumbNailContainer){
-    display: flex;
-    height: auto;
-    width: 90%
+    display: inline-block;
+    align-self: center;
+    
 }
 :local(.thumbNail){
-   width: 64px;
+   width: 65px;
    height: 65px;
    margin-right: 10px;
 }

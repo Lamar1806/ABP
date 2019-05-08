@@ -4,6 +4,10 @@ import hero from './img/bg.png'
 export default class Service extends Component {
     state={
         options: ["Can't start pool?",'Saab','Fiat','Audi'],
+        value: "Can't start pool?",
+    }
+    change = (event) => {
+        this.setState({value: event.target.value});
     }
     renderOptions(){
         return this.state.options.map((e,index)=>{
@@ -25,10 +29,9 @@ export default class Service extends Component {
                 
                 </div>
 
-                <select className={styles.select} name="cars">
-                    <option value={''}>Select Option</option>
+                <select className={styles.select} name="option" onChange={(e)=>this.change(e)} value={this.state.value}>
                     {this.renderOptions()}
-                </select> 
+                </select>
                 
                 <p className={styles.p3}>Can't Find a Selection?</p>
                 <a href="/Contact" className={styles.btn}>Contact Us!</a>

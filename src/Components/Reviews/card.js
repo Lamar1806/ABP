@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styles from './card.css'
-import profileImg from './img/profile.png';
+// import profileImg from './img/profile.png';
 
 import back from './img/back.png'
 import forward from './img/forward.png'

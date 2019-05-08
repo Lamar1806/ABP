@@ -11,21 +11,31 @@
 }
 
 :local(.innerContainer){
+    position: relative;
     align-self: center;
     position: absolute;
+    height: 100%;
     top: 0;    
     color: white;
     padding: 20px 20px;
-    text-align: center;    
+    text-align: center;     
 }
 
 :local(.h1){
-    font-size: 16px;
-    margin-bottom: 60%;
+    /* font-size: 16px; */
+    margin-bottom: 50%;
 }
+
+:local(.ctaContainer){
+    position: absolute;
+    bottom: 30%;
+    align-self: center;
+}
+
 
 :local(.ctaTxt){
     margin-bottom: 30px;
+    font-size: 25px;
 }
 
 :local(.pillBtn){
@@ -33,6 +43,6 @@
     background: white;
     color: black;
     padding: 8px 20px;
-    border-radius: 20px;
-    border: 1px solid black;
+    border-radius: 22px;
+    cursor: pointer;
 }

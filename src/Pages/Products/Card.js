@@ -6,7 +6,7 @@ import styles from './Card.css'
 export default class Card extends Component {
   render() {
     return (
-      <Link to={`${this.props.location.pathname}/ok`}>
+      <Link to={`${this.props.location.pathname}/${this.props.title}`}>
       <div className={styles.container}>
         <h4 className={styles.h4}>{this.props.title}</h4>
         <img className={styles.img} src={this.props.img} alt=""/>

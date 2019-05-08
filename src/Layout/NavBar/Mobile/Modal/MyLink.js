@@ -1,9 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import styles from './Modal.css'
-
-let MyLink = (props)=>{
+let MyLink = (props)=>{    
     return(
         <li> 
             <i className={`${props.icon}`}></i> 

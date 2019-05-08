@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styles from './About.css'
-import hero from './img/hero.png'
+// import hero from './img/hero.png'
 import subPic from './img/subPic.png'
 import Reviews from '../../Components/Reviews/Reviews'
 
@@ -8,7 +8,7 @@ export default class About extends Component {
   render() {
     return (
       <div className={styles.container}>
-        <img className={styles.hero} src={hero} alt=""/> 
+        {/* <img className={styles.hero} src={hero} alt=""/>  */}
         <h2 className={styles.h2}>About Us</h2>
         <p className={styles.p}>
         It is a long established fact that a reader will be 

@@ -4,6 +4,9 @@
     padding: 0px 15px;
     background: black;
     align-items: center;
+    /* position: absolute; */
+    /* align-self: flex-end; */
+    width: 100%;
 }
 :local(.txt){
     color: white;

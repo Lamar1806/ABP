@@ -8,3 +8,12 @@
 :local(.h2){
     margin-bottom: 20px;
 }
+
+:local(.cardContainer){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    min-width: 285px;
+    max-width: calc(855px + 30px);
+} 

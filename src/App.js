@@ -1,20 +1,19 @@
-import React, {Component} from 'react';
-import { Router, Route, Switch } from "react-router";
-import Navbar from './Layout/NavBar/Mobile/Navbar'
-import Footer from './Layout/Footer/Footer'
-import Home from './Pages/Home/Home' 
-import Contact from './Pages/Contact/Contact'
-import About from './Pages/About/About' 
-import Products from './Pages/Products/Products'
-import ProductView from './Pages/ProductView/ProductView'
-import Service from './Pages/Service/Service'
-import NotFound from './Pages/NotFound/NotFound'
+import React from 'react';
+import { Route, Switch } from "react-router";
+import Navbar from './Layout/NavBar/Mobile/Navbar';
+import Footer from './Layout/Footer/Footer';
+import Home from './Pages/Home/Home' ;
+import Contact from './Pages/Contact/Contact';
+import About from './Pages/About/About' ;
+import Products from './Pages/Products/Products';
+import ProductView from './Pages/ProductView/ProductView';
+import Service from './Pages/Service/Service';
+import Brochure from './Pages/Brochure/Brochure';
+import NotFound from './Pages/NotFound/NotFound';
 
 import {Helmet} from 'react-helmet'
 
 import './App.css'
-import produce from 'immer';
-
 
 // this component will be rendered by our <___Router>
 function App() {
@@ -22,7 +21,7 @@ function App() {
         'AboveGroundPools',
         'InGroundPools',
         'PoolChemicals',
-        'PoolToys',
+        // 'PoolToys',
         'FirePits',
         'Perola',
         'Decks',
@@ -33,7 +32,6 @@ function App() {
     <React.Fragment>
     <Helmet>
         <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet" />
-        <title>APB</title>
     </Helmet>      
     <div className="AppContainer">
         <Navbar />
@@ -43,11 +41,12 @@ function App() {
             <Route exact path='/About' component={About}/>
             <Route exact path={`/Products/:category(${productUrls.join('|')})`} component={Products}/>
             <Route path={`/Products/:category(${productUrls.join('|')})/`} component={ProductView}/>
-            <Route exact path='/Service' component={Service}/>    
+            <Route exact path='/Service' component={Service}/>   
+            <Route exact path='/Brochure' component={Brochure}/>   
             <Route component={NotFound}/>        
-        </Switch>
-        <Footer />        
+        </Switch>       
     </div>
+    <Footer />        
     </React.Fragment>
     );
   }

@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
 import styles from './Card.css'
 
 export default class Card extends Component {
   render() {
     return (
-      <a href="/Contact">
+      <Link to={{
+                pathname:"/Contact",
+                state:{
+                  recipients: this.props.recipients,
+                }
+      }}>
         <div className={styles.container}>
           <i className={`${this.props.ionIconName} ${styles.icon}`}></i> 
 
@@ -17,7 +21,7 @@ export default class Card extends Component {
           </div>
 
         </div>
-      </a>
+      </Link>
     )
   }
 }
