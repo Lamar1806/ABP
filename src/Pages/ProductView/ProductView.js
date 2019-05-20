@@ -19,36 +19,44 @@ export default class ProductView extends Component {
         this.setState({isModalVisable: !this.state.isModalVisable});
     }
     renderOptions(){
-        return this.state.options.map((e,index)=>{
+        if(!this.props.location.state.options){
+            return;
+        }
+        let options = this.props.location.state.options.map((e,index)=>{
             return <option key={index} value={e}>{e}</option>
         })
+        if(options.length === 0){
+            return;
+        }
+        return(
+            <select className={styles.select} name="option" onChange={(e)=>this.change(e)} value={this.state.value}>
+               {options}
+            </select>
+        )
     }
     render() {
         // let productcat = this.props.location.pathname.split('/')[3];
         let productName = this.props.location.pathname.split('/')[3];
-
+        console.log(productName);
+        if(productName == 'Outdoor Kitchens '){
+            productName = this.props.location.state.title;
+        }
+        
+        // console.log(this.props.location.state.imgs)
         return (
         <div className={styles.container}>
-            <h3 className={styles.category}>Above Ground</h3>
+            {/* <h3 className={styles.category}>Above Ground</h3> */}
             <h2 className={styles.title}>{productName}</h2>
 
-            <ThumbNailSelect />
+            <ThumbNailSelect imgs={this.props.location.state.imgs}/>
             
-            <select className={styles.select} name="option" onChange={(e)=>this.change(e)} value={this.state.value}>
-                {this.renderOptions()}
-            </select>
+           
+            {this.renderOptions()}
+            
 
             <p className={styles.descripion}>
-                Contrary to popular belief, Lorem Ipsum is not 
-                simply random text. It has roots in a piece of 
-                classical Latin literature from 45 BC, making 
-                it over 2000 years old. Richard McClintock, a 
-                Latin professor at Hampden-Sydney College in 
-                Virginia, looked up one of the more obscure 
-                Latin words, consectetur, from a Lorem Ipsum 
-                passage, and going through the cites of the 
-                word in classical literature, discovered the 
-                undoubtable source.
+                
+                <span dangerouslySetInnerHTML={{__html:this.props.location.state.description}} />
             </p>
         
             <span className={styles.btn} onClick={()=>this.toggleModal()}>Get a Quote</span>

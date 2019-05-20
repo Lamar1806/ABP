@@ -7,7 +7,10 @@
 html {
     scroll-behavior: smooth;
 }
-
+html, body {
+    min-height:100vh;
+    height:100%;
+}
 ul{
     list-style-type: none;
 }
@@ -22,5 +25,8 @@ a{
     display: flex;
     flex-direction: column;
     flex: 1;
-    min-height: calc(100vh - 50px);
-}
+    min-height: calc(100vh);
+    /* min-height:100%; */
+    margin-bottom: -50px; /* Put negative height of the footer here */
+    padding-bottom: 50px; /* Put height of the footer here. Needed for higher than screen height pages */
+} 

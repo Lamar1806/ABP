@@ -26,3 +26,9 @@
     font-size: 25px;
     cursor: pointer;
 }
+
+:local(.navLink){
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%)
+}

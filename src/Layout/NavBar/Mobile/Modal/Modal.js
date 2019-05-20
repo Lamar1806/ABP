@@ -41,7 +41,7 @@ export default class Modal extends Component {
 
           <ul className={styles.outerUl}>
             <MyLink toggleModal={this.props.toggleModal.bind(this)} icon='icon ion-md-home' link='/' text=' Home'/>
-            <MyLink toggleModal={this.props.toggleModal.bind(this)} icon='icon ion-md-people' link='/About' text=' About Us'/>
+            
             
             <li onClick={()=>this.toggleProductsIsVisable()} ><i className={`icon ion-md-build ${styles.outerUlIcon}`}></i> Products <i className={`icon ${dropdown} ${styles.add}`}></i> </li>
             <ul className={styles.innerUl} style={style2} > 
@@ -51,16 +51,33 @@ export default class Modal extends Component {
               {/* <MyLink toggleModal={this.props.toggleModal.bind(this)} icon='icon ion-md-hammer' link='/products/PoolToys' text=' Pool Toys'/> */}
               <MyLink toggleModal={this.props.toggleModal.bind(this)} icon='icon ion-md-hammer' link='/products/FirePits' text=' Fire Pits'/>
               <MyLink toggleModal={this.props.toggleModal.bind(this)} icon='icon ion-md-hammer' link='/products/Decks' text=' Decks'/>
-              <MyLink toggleModal={this.props.toggleModal.bind(this)} icon='icon ion-md-hammer' link='/products/Perola' text=' Perola'/>
+              {/* <MyLink toggleModal={this.props.toggleModal.bind(this)} icon='icon ion-md-hammer' link='/products/Perola' text=' Perola'/> */}
               <MyLink toggleModal={this.props.toggleModal.bind(this)} icon='icon ion-md-hammer' link='/products/Concrete' text=' Concrete'/>
               <MyLink toggleModal={this.props.toggleModal.bind(this)} icon='icon ion-md-hammer' link='/products/PoolChemicals' text=' Pool Chemicals'/>
 
             </ul>
+            
+            <MyLink toggleModal={this.props.toggleModal.bind(this)} icon='icon ion-md-people' link='/About' text=' About Us'/>
             {/* <MyLink toggleModal={this.props.toggleModal.bind(this)} icon='icon ion-md-settings' link='/Service' text=' Service Department'/> */}
 
+            <MyLink toggleModal={this.props.toggleModal.bind(this)} icon='icon ion-md-book' link='/Brochure' text=' Get a Brochure'/>
+
             <MyLink toggleModal={this.props.toggleModal.bind(this)} icon='icon ion-md-mail' link='/Contact' text=' Get a Quote'/>
-          
+
+            <a className={styles.hfslink} 
+              target="_blank" 
+              href="https://www.hfsfinancial.net/promo/advancedpoolsandbackyardsOk">
+              <i className={`icon ion-md-cash`}></i>&nbsp;Click for Financing!<br/>
+              <img className={styles.hfsImg} src={"https://www.hfsfinancial.net/img/external/hfs_logo_red.png"} />
+            </a>
+
           </ul> 
+          
+            <a  className={styles.directions}
+              target="_blank" 
+              href="https://www.google.com/maps/place/108+W+Main+St,+Stigler,+OK+74462/@35.2541425,-95.128805,17z/data=!3m1!4b1!4m5!3m4!1s0x87b58669676da891:0xe88c50ea08f64b90!8m2!3d35.2541425!4d-95.126611">
+              <i className={`icon ion-md-car`}></i>&nbsp;Come On In!
+            </a>
 
         </div>
       </div>

@@ -1,18 +1,14 @@
 import React, { Component } from 'react'
 import styles from './ThumbNailSelect.css'
 
-import img from './img/img.png'
-import img2 from './img/img2.png'
-import img3 from './img/img3.png'
-import img4 from './img/img4.png'
+
 
 export default class ThumbNailSelect extends Component {
     state={
         selected: null,
-        imgUrls:[img, img2, img3, img4]
     }
     componentWillMount(){
-        this.setState({selected: this.state.imgUrls[0]});
+        this.setState({selected: this.props.imgs[0]});
     } 
   
     selectImg(e){
@@ -23,7 +19,7 @@ export default class ThumbNailSelect extends Component {
 
     renderThumbNail(){
         let list = []
-        this.state.imgUrls.forEach((e, index)=>{ 
+        this.props.imgs.forEach((e, index)=>{ 
             list.push(
                 <img 
                 className={styles.thumbNail}

@@ -18,14 +18,20 @@
     top: 0;    
     color: white;
     padding: 20px 20px;
-    text-align: center;     
+    text-align: center;    
+    
 }
 
 :local(.h1){
     /* font-size: 16px; */
     margin-bottom: 50%;
 }
-
+@media only screen and (min-width: 600px) {
+    :local(.ctaContainer){
+        width: 110%;
+        left: -25px;
+    }
+}
 :local(.ctaContainer){
     position: absolute;
     bottom: 30%;
@@ -35,7 +41,7 @@
 
 :local(.ctaTxt){
     margin-bottom: 30px;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 :local(.pillBtn){

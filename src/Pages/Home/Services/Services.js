@@ -3,7 +3,7 @@ import styles from './Services.css'
 import Card from './Card'
 
 import kitchen from './img/outDoorKitchen.png'
-import abovegroundpool from './img/abovegroundpool.jpg'
+import abovegroundpool from '../../Products/img/century/0.jpg'
 import ingroundpool from './img/ingroundpool.jpg'
 import poolchemicals from './img/poolchemicals.jpg'
 import deck from './img/deck2.jpg'
@@ -32,7 +32,7 @@ export default class Services extends Component {
             //     link:'/Products/PoolToys'
             // },
             {
-                title:'Fire Pits',
+                title:'Outdoor Kitchens / Firepits',
                 img: kitchen,
                 alt:'Kitchen Image',
                 link:'/Products/FirePits'

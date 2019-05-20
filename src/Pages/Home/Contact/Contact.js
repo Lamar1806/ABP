@@ -33,8 +33,8 @@ export default class Contact extends Component {
         ]
     }
     renderCards(){
-        let tyler = 'segrestbrook@goldmail.etsu.edu'
-        let store = 'brooks@digitalversatility.com'
+        let tyler = 'tyler@apbllc.net'
+        let store = 'pools@apbllc.net'
         let recipients = `${store}`
         return this.state.cards.map((e, index)=>{ 
             if(e.mainText === 'Service Call'){

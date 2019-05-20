@@ -18,13 +18,13 @@ export default class Hero extends Component {
           <div className={styles.ctaContainer}>
 
             <p className={styles.ctaTxt}>
-              We handle all backyard needs  
-              at a backyard near you!
+              We handle all your backyard needs!
             </p>
 
             <Link to='contact' className={styles.pillBtn}>
               Get A Quote 
             </Link>
+
           </div>
 
 

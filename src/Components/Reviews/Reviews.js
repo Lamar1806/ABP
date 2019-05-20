@@ -3,28 +3,29 @@ import styles from './Reviews.css'
 import bg from './img/bg.png'
 import Card from './card'
 
-import img1 from './img/profile.png'
-import img2 from './img/bg.png'
+import review0 from './img/review0.jpg'
+import review1 from './img/review1.jpg'
+import review2 from './img/review2.jpg'
 
 export default class Reviews extends Component {
   state={
     index: 0,
     cards:[
       {
-        img: img1,
-        text: 'Card 1 They make the entire process easy, and the work is outstanding.'
-          +' Once they are done they leave the pool area looking nice. It is also'
-          +' fantastic that they can do the other backyard stuff like decks and '
-          +' outdoor kitchens. i am looking forward to doing expanded decking' 
-          +' and a kitchen in the future'
+        img: review0,
+        text: 'They make the entire process easy, and the work is outstanding.'
+        +'Once they are done they leave the pool area looking nice. It is also '
+        +'fantastic that they can do the other backyard stuff like decks and ' 
+        +'outdoor kitchens. i am looking forward to doing expanded decking and '
+        +'a kitchen in the future!'
       },
       {
-        img: img2,
-        text: 'Card 2 They make the entire process easy, and the work is outstanding.'
-          +' Once they are done they leave the pool area looking nice. It is also'
-          +' fantastic that they can do the other backyard stuff like decks and '
-          +' outdoor kitchens. i am looking forward to doing expanded decking' 
-          +' and a kitchen in the future'
+        img: review1,
+        text: 'They installed our pool and did an amazing job. Very pleased with my pool.'
+      },
+      {
+        img: review2,
+        text: 'Best pool service in Oklahoma!'
       },
     ]
   }

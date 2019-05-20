@@ -28,10 +28,9 @@ export default class GetNumber extends Component {
                 subject: `Customer Intrested in Product: ${this.props.item} `,
                 message: `Product: ${this.props.item} 
                         <br />Option: ${this.props.option} 
-                        <br />Phone: ${this.state.number}
-                        
+                        <br />Phone: ${this.state.number}                        
                         `,
-                recipients: 'segrestbrook@goldmail.etsu.edu', /*this.props.recipients ? this.props.recipients : */
+                recipients: 'pools@apbllc.net', /*this.props.recipients ? this.props.recipients : */
             })
             }) 
         

@@ -74,7 +74,28 @@
     display: none;
 }
 :local(.innerUl > li){
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     cursor: pointer;
     
+}
+
+:local(.directions){
+    display: flex;
+    background: orangered;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    color: white;
+}
+
+:local(.hfslink){
+    display: block;
+    /* margin-top: 50px; */
+}
+:local(.hfsImg){
+    width: 250px;
+    height: 100px;
 }

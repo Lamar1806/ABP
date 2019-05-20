@@ -6,7 +6,7 @@ export default class Card extends Component {
   render() {
     return (
       <Link to={{
-                pathname:"/Contact",
+                pathname: this.props.mainText === 'Brochure' ? "/Brochure": '/Contact',
                 state:{
                   recipients: this.props.recipients,
                 }
